@@ -1,0 +1,10 @@
+{
+  "name": "typed.js",
+  "description": "JavaScript type annotation library",
+  "version": "0.1.0",
+  "devDependencies": {
+    "coffee-script": "1.6.3",
+    "mocha": "1.13.0",
+    "should": "2.0.1"
+  }
+}
