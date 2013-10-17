@@ -1,0 +1,9 @@
+* Boolean, Number, String, Array, Object, Function, RegExp, a Function
+* Any -- anything
+* Any(type1, type2, ...) -- any of type1 or type2 or ...
+* [Number] -- array of numbers
+* [Number, String] -- array of 2 elements, first is Number, seconds is String
+* [type, 'opt'] -- shorthand for Any(type, [type])
+* {'key': type}
+* 'string' -> custom pre-defined
+* a function --> if it starts with an Uppercase, its a class, otherwise use it for testing
