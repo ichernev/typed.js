@@ -8,4 +8,4 @@ module.exports = (val, type) ->
   else if type in [Array, RegExp, Object]
     {}.toString.apply(val) is {}.toString.apply(new type)
   else
-    throw new Error("implement me")
+    throw new Error("unknown type " + type)

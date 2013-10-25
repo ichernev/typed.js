@@ -13,14 +13,11 @@ describe "is type", ->
       "RegExp": [/pattern/, /insensitive/i, new RegExp('.')]
 
     all_examples = [].concat.apply [], (val for key, val of examples)
-    console.log 'all', all_examples
     for type_name, pos_exaples of examples
       type = GLOBAL[type_name]
 
       for pos_exaple in pos_exaples
-        console.log('pos', type_name, pos_exaple)
         is_type(pos_exaple, type).should.be.true
 
       for neg_example in all_examples when neg_example not in pos_exaples
-        console.log('neg', type_name, neg_example)
         is_type(neg_example, type).should.be.false
