@@ -11,6 +11,7 @@ describe "is type", ->
       "Array": [[], [1], [1, 'b'], [{}], new Array(), new Array(1, 2, 3)]
       "Object": [{}, key: 'val']
       "RegExp": [/pattern/, /insensitive/i, new RegExp('.')]
+      "Function": [->]
 
     all_examples = [].concat.apply [], (val for key, val of examples)
     for type_name, pos_exaples of examples

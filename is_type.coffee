@@ -5,6 +5,8 @@ module.exports = (val, type) ->
     typeof val is 'number'
   else if type is String
     typeof val is 'string'
+  else if type is Function
+    typeof val is 'function'
   else if type in [Array, RegExp, Object]
     {}.toString.apply(val) is {}.toString.apply(new type)
   else
