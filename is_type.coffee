@@ -9,5 +9,7 @@ module.exports = (val, type) ->
     typeof val is 'function'
   else if type in [Array, RegExp, Object]
     {}.toString.apply(val) is {}.toString.apply(new type)
+  else if typeof type is 'function'
+    type(val)
   else
     throw new Error("unknown type " + type)
