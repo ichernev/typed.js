@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "devDependencies": {
     "coffee-script": "1.6.3",
+    "grunt": "0.4.1",
+    "grunt-mocha-test": "0.7.0",
     "mocha": "1.13.0",
     "should": "2.0.1"
   }
