@@ -8,3 +8,5 @@ module.exports = (types...) ->
           msg = "Expected type #{ types[i].name } at pos #{i} got #{JSON.stringify(arg)}"
           throw new Error msg
       f.apply(this, args)
+
+exports.Any = {}
